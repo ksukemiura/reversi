@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reversi Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Reversi</h1>
+        
+        <div class="game-info">
+            <div class="score">
+                <div class="black-score">Black: <span id="black-count">2</span></div>
+                <div class="white-score">White: <span id="white-count">2</span></div>
+            </div>
+            <div class="turn-indicator">
+                Current Turn: <span id="current-turn">Black</span>
+            </div>
+            <button id="reset-button">New Game</button>
+        </div>
+        
+        <div id="board" class="board"></div>
+        
+        <div id="game-over" class="game-over hidden">
+            <div class="message">Game Over!</div>
+            <div id="winner"></div>
+            <button id="play-again">Play Again</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
